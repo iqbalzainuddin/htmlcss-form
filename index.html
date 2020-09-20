@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iqbal Bin Mohamad Zainuddin">
+    <meta name="keywords" content="Survey, survey, Form, form, Template, template, HTML, html, CSS, css">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="title">Bomboloni Gebus Nilai</h1>
+        <p id="description">Use this form to order your menu.</p>
+
+        <form id="survey-form" action="">
+
+            <div class="input-group">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            
+            <div class="input-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="number" id="number-label">Quantity:</label>
+                <input type="number" id="number" min="1" max="6" placeholder="How many donut you want?">
+            </div>
+
+            <div class="input-group">
+                <label for="dropdown" id="dropdown-label">Side Dish:</label>
+                <select id="dropdown">
+                    <option value="Lasagna">Lasagna</option>
+                    <option value="Meatball">Cheezy Meatball</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <p>Water Cup:</p>
+                <label><input type="radio" name="cup" id="cup" value="regular"> Regular</label>
+                <label><input type="radio" name="cup" id="cup" value="large"> Large</label>
+            </div>
+
+            <div class="input-group">
+                <p>Select Flavour Mix:</p>
+                <label><input type="checkbox" name="flavour" id="flavour" value="apple">Apple</label>
+                <label><input type="checkbox" name="flavour" id="flavour" value="watermelon">Watermelon</label>
+                <label><input type="checkbox" name="flavour" id="flavour" value="lychee">Lychee</label>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Special Instruction <span class="clue">(If any)</span>:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="input-group">
+                <button class="btn btn-submit" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
